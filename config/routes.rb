@@ -1,4 +1,7 @@
 LookcastRedirector::Application.routes.draw do
+  resources :overviews, only: [:index]
+  root to: 'overviews#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
